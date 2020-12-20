@@ -1,0 +1,55 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Konference 2020</h1>
+
+        <?php
+        if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+            echo "<h2> Vítej návštěvníku! </h2>";
+        }
+        else{
+            echo "<h2> Vítejte uživateli '" . $_SESSION['username'] . "' </h2>";
+        }
+        ?>
+        <br>
+        <p> Vítejte na stránkách  konference 2020 </p>
+        <p>  Jako každý rok i letos se bude pořád konference zaměřěná na chod Západočeské univerzity v Plzni.
+            Této konference se může zúčastnit kdokoliv, kdo chce přispět do diskuze, přidat návrh na zlepšení chodu univerzity,
+            popřípadě zmínit výtky.
+            Tento rok se bude konference konat v trochu netradičním stylu. Naštěstí se nám podařilo obhájit prezenční setkání,
+            pod podmínkou dostatečně velké místnosti, dodržení odstupů a nasazených roušek.
+        </p>
+
+        <p> Konference se může zůčastnit kdokoliv, ať už zástupci profesorského sboru, žáků, tak i veřejné populace.</p>
+        <p> Setkání proběhne 30.12.2020 v kampusu ZČU, Fakultě aplikovaných věd, přednáškovna č. 110 </p>
+        <br><br><br><br>
+        <h1 class="display-5 pt-4">O univerzitě</h1>
+        <div class ="text-center">
+            <img src ="images/1280px-ZCU-kampus-vlajky.jpg" class="img-fluid rounded-right pt-4" alt="Responsive image">
+        </div>
+        <form>
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top" src="images/ddd_50631_plzensko_h.png" alt="Card image cap">
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/01019655.jpeg" alt="Card image cap">
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/plzenzcu_ntis_140920_13a.jpg" alt="Card image cap">
+                </div>
+            </div>
+        </form>
+
+        <div class="pt-3">
+            <br>
+            <p>    V letech 1992–1993 došlo k přesunu Fakulty aplikovaných věd a Fakulty strojní do nového univerzitního areálu na tzv. Zelený trojúhelník Bory. Plán na jeho výstavbu byl přitom schválen již v roce 1973.</p>
+            <p>    V roce 1993 byla zřízena Fakulta právnická a v roce 1999 Fakulta humanitních studií, která byla roku 2005 na návrh prvního děkana Ivo T. Budila přejmenována na Fakultu filozofickou. V roce 2004 byl zřízen Ústav umění a designu jako samostatný vysokoškolský ústav; v roce 2013 povýšil na Fakultu umění a designu, která se o rok později přejmenovala na Fakultu designu a umění Ladislava Sutnara. V roce 2008 se s univerzitou spojila soukromá Vysoká škola v Plzni a vznikla tak Fakulta zdravotnických studií.</p>
+            <p>    Na konci první dekády 21. století proběhla na Fakultě právnické plagiátorská aféra a skandál s údajnými podvody v procesu udělování akademických titulů a řádného studia.</p>
+            <p>     Na sklonku roku 2019 získala ZČU institucionální akreditaci pro jedenáct oblastí vzdělávání v bakalářském stupni studia, v osmi magisterských a ve čtyřech doktorských oblastech. Západočeská univerzita tak může v těchto oblastech tvořit a samostatně schvalovat studijní programy a na jejich základě poskytovat vysokoškolské vzdělání.</p>
+            <p>     V letech 2018-2020 získalo pět fakult a součástí ZČU ocenění Evropské komise HR Excellence in Research, zkráceně HR Award, deklarující, že daná organizace vytváří vědeckým pracovníkům ve všech ohledech příznivé podmínky a dodržuje evropské standardy.</p>
+            <p>    V žebříčku vysokých škol World University Rankings 2019-2020 se ZČU umístila na 5. místě z univerzit v České republice.</p>
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,89 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Potvrzení ubytování</h1>
+        <br><br>
+
+        <?php
+        $rezervaceInput = new RezervaceInput();
+        $row = $rezervaceInput->rezervaceInput();
+        ?>
+
+        <form action="formular-rezervace" method="post">
+            <h2> Vaše údaje </h2>
+            <div class="form-row">
+
+                <div class="form-group col-md-6">
+                    <label>Jméno</label>
+                    <input type="text"  name="U_inputName" class="form-control" placeholder="Marek" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Příjmení</label>
+                    <input type="text" class="form-control" name="U_inputSurrname" placeholder="Vajšbejn" required>
+                </div>
+            </div>
+            <div class="form-group">
+
+                <label>Ulice</label>
+                <input type="text" class="form-control" name="U_inputAddress" placeholder="Školní 15" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Město</label>
+                    <input type="text" class="form-control" name="U_inputCity" required>
+                </div>
+
+                <div class="form-group col-md-2">
+                    <label>Směrovací číslo</label>
+                    <input type="text" class="form-control" name="U_inputZip" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label>Telefonní číslo</label>
+                    <input type="text" class="form-control" name="U_inputPhone" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" name="U_inputEmail" placeholder="xyz@gmail.com" required>
+            </div>
+
+            <br><br>
+
+            <h2> Údaje vybraného hotelu </h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <div class="form-group col-md-13">
+                        <label>Jméno hotelu</label>
+                        <input type="text" class="form-control" name="H_inputName" value="<?php echo $row['name'];?> " readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group col-md-13">
+                        <label>Město</label>
+                        <input type="text" class="form-control" name="H_inputCity" value="<?php echo $row['town'];?>" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group col-md-13">
+                        <label>Ulice</label>
+                        <input type="text" class="form-control" name="H_inputAdress" value="<?php echo $row['street'];?>" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group col-md-13">
+                        <label>Směrovací číslo</label>
+                        <input type="text" class="form-control" name="H_inputZip" value="<?php echo $row['post_code'];?>" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group col-md-13">
+                        <label>Tel. číslo</label>
+                        <input type="text" class="form-control" name="H_inputPhone" value="<?php echo $row['tel_number'];?>" readonly>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" name="reg_hotel"> Register </button>
+
+        </form>
+
+    </div>
+</div>

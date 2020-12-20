@@ -1,0 +1,101 @@
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h2 class="text-center"> Vaše rezervace</h2>
+
+        <?php
+       $ubytovani = new Ubytovani();
+       $ubytovani->ubytovani();
+        ?>
+        <h1 class="display-3">Ubytovani konference 2020</h1>
+        <br><br>
+        <form action="ubytovani"  method="post">
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top" src="images/hotel1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Trinity</h5>
+                        <p class="card-text">Vzálenost od konferenčního místa: 1 km <br>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small><button type="submit" name="submit" value="5"> Zvolit </button></small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/hotel2.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Penzion v Ráji</h5>
+                        <p class="card-text">Vzálenost od konferenčního místa: 1,1 km <br>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"> <button type="submit" name="submit" value="6"> Zvolit </button> </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/hotel3.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Alley</h5>
+                        <p class="card-text">Vzálenost od konferenčního místa: 0,7 km <br>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            <button type="submit"  name="submit" value="2"> Zvolit </button>
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+            <br><br>
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top" src="images/hotel4.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Central Park</h5>
+                        <p class="card-text">Vzálenost od konferenčního místa: 2,1 km <br>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><button type="submit"  name="submit" value="1"> Zvolit </button></small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/hotel5.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Palác</h5>
+                        <p class="card-text">Vzálenost od konferenčního místa: 1,7 km <br>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><button type="submit"  name="submit" value="4"> Zvolit </button></small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top"  src="images/hotel6.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Domino</h5>
+                        <p class="card-text">Vzálenost od konferenčního místa: 0,2 km <br>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><button type="submit"  name="submit" value="3"> Zvolit </button></small>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+</div>

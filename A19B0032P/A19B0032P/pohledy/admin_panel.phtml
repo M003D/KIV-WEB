@@ -1,0 +1,44 @@
+<div class="jumbotron">
+    <div class="container">
+        <h2 class="text-center"> Přehled zaregistrovaných uživatelů </h2>
+
+        <div class="table-responsive">
+            <table class="table" border="3">
+                <th> Jmeno </th>
+                <th> Heslo </th>
+                <th> Operace </th>
+
+                <?php
+                $admin = new AdminPanel();
+                $admin->tableUser();
+                ?>
+            </table>
+        </div>
+
+        <h2 class="text-center"> Přehled rezervace </h2>
+
+        <div class="table-responsive">
+            <table class="table" border="3">
+                <th class="row-Name"> Uživ. nickname </th>
+                <th class="row-Name"> Jméno </th>
+                <th class="row-Name"> Příjmení </th>
+                <th class="row-Name"> Ulice </th>
+                <th class="row-Name"> Mesto </th>
+                <th class="row-Name"> Poštovní číslo </th>
+                <th class="row-Name"> Telefonní číslo </th>
+                <th class="row-Name"> Email </th>
+                <th class="row-Name"> Jméno hotelu </th>
+                <th class="row-Name"> Mesto </th>
+                <th class="row-Name"> Ulice </th>
+                <th class="row-Name"> Postovni cislo </th>
+                <th class="row-Name"> Telefonni cislo </th>
+                <th class="row-Name"> Operace </th>
+
+                <?php
+                $admin = new AdminPanel();
+                $admin->tableReservation();
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
