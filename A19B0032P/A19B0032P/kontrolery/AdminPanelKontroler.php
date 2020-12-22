@@ -12,6 +12,11 @@ class AdminPanelKontroler extends Kontroler{
             header('Location: ubytovani');
             die();
         }
+        $name = $_SESSION['username'];
+        if($name != "admin") {
+            header('Location: ubytovani');
+            die();
+        }
         $this->hlavicka = array(
             'titulek' => 'Admin panel',
             'klicova_slova' => 'Admin panel',

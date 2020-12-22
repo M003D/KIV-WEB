@@ -26,6 +26,11 @@ abstract class Kontroler
 	// Přesměruje na dané URL
 	public function presmeruj($url)
 	{
+        if($url = "localhost"){
+            header("Location: uvod");
+            header("Connection: close");
+            exit;
+        }
 		header("Location: /$url");
 		header("Connection: close");
         exit;

@@ -38,6 +38,7 @@ class AdminPanel
         $db->disconnect($databaze);
     }
 
+
     /**
      * Funkce zobrazí tabulku rezervací
      */

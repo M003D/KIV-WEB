@@ -26,6 +26,7 @@ class FormularRezervaceKontroler extends Kontroler{
             $H_zip = filter_var(strip_tags($_POST['H_inputZip']), FILTER_SANITIZE_SPECIAL_CHARS);
             $H_phone = filter_var(strip_tags($_POST['H_inputPhone']), FILTER_SANITIZE_SPECIAL_CHARS);
 
+            if($U_phone)
             //volání modelu rezervace
             $rezervace = new FormularRezervace();
             $rezervace->formularrezervace($name,$U_name,$U_surrname,$U_adress,$U_city,$U_zip,
