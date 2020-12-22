@@ -15,7 +15,7 @@ function autoloadFunkce($trida)
         require("modely/" . $trida . ".php");
 }
 
-// Registrace callbacku (Pod starým PHP 5.2 je nutné nahradit fcí __autoload())
+// Registrace callbacku
 spl_autoload_register("autoloadFunkce");
 
 // Vytvoření routeru a zpracování parametrů od uživatele z URL
